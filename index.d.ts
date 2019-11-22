@@ -1,14 +1,41 @@
 /**
- * My awesome module.
- * @param input Lorem ipsum.
- * @param postfix Lorem ipsum.
+ * Characters in the english language.
  * @example
  * ```
- * const theModule = require("the-module");
- * theModule("unicorns");
- * //=> 'unicorns & rainbows'
+ * const englishChars = require("english-chars");
+ *
+ * englishChars.uppercase
+ * //=> 'ABCDE...'
+ *
+ * englishChars.lowercase
+ * //=> 'abcdef...'
  * ```
 */
-declare function theModule(input: string, { postfix }: { postfix?: string }): string;
+interface englishChars {
+    /**
+     * Uppercase alphabet letters.
+    */
+    uppercase: string,
 
-export = theModule;
+    /**
+    * Lowercase alphabet letters.
+    */
+    lowercase: string,
+
+    /**
+    * Uppercase and lowercase alphabet letters.
+    */
+    letters: string,
+
+    /**
+     * Digits from 0 to 9.
+    */
+    digits: string
+
+    /**
+     * All the characters.
+    */
+    all: string
+}
+
+export = englishChars;

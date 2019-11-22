@@ -1,7 +1,14 @@
 "use strict"
 
-module.exports = (input, { postfix = "rainbows" } = {}) => {
-    if (typeof input !== "string") throw new TypeError(`Expected a string, got ${typeof input}`)
+const uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+const lowercase = uppercase.toLowerCase()
+const letters = uppercase + lowercase
+const digits = "0123456789"
 
-    return `${input} & ${postfix}`
+module.exports = {
+    uppercase,
+    lowercase,
+    letters,
+    digits,
+    all: letters + digits,
 }

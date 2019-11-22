@@ -1,8 +1,8 @@
 {
-    "name": "the-module",
+    "name": "english-chars",
     "version": "0.0.0",
-    "description": "My awesome module.",
-    "repository": "https://github.com/Richienb/the-module.git",
+    "description": "Characters in the english language.",
+    "repository": "https://github.com/Richienb/english-chars.git",
     "author": "Richie Bendall <richiebendall@gmail.com>",
     "license": "MIT",
     "main": "index.js",
@@ -11,13 +11,19 @@
         "index.d.ts"
     ],
     "engines": {
-        "node": ">=8"
+        "node": ">=4"
     },
     "scripts": {
         "lint": "xo",
         "test": "yarn lint && ava"
     },
-    "keywords": [],
+    "keywords": [
+        "english",
+        "chars",
+        "characters",
+        "letters",
+        "set"
+    ],
     "dependencies": {},
     "devDependencies": {
         "ava": "^2.1.0",

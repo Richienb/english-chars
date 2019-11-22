@@ -1,41 +1,57 @@
-# The module [![Travis CI Build Status](https://img.shields.io/travis/com/Richienb/the-module/master.svg?style=for-the-badge)](https://travis-ci.com/Richienb/the-module)
+# English characters [![Travis CI Build Status](https://img.shields.io/travis/com/Richienb/english-chars/master.svg?style=for-the-badge)](https://travis-ci.com/Richienb/english-chars)
 
-My awesome module.
+Characters in the english language.
 
-[![NPM Badge](https://nodei.co/npm/the-module.png)](https://npmjs.com/package/the-module)
+[![NPM Badge](https://nodei.co/npm/english-chars.png)](https://npmjs.com/package/english-chars)
 
 ## Install
 
 ```sh
-npm install the-module
+npm install english-chars
 ```
 
 ## Usage
 
 ```js
-const theModule = require("the-module");
+const englishChars = require("english-chars");
 
-theModule("unicorns");
-//=> 'unicorns & rainbows'
+englishChars.uppercase
+//=> 'ABCDE...'
+
+englishChars.lowercase
+//=> 'abcdef...'
 ```
 
 ## API
 
-### theModule(input, options?)
+### englishChars
 
-#### input
+#### uppercase
 
 Type: `string`
 
-Lorem ipsum.
+Uppercase alphabet letters.
 
-#### options
+#### lowercase
 
-Type: `object`
+Type: `string`
 
-##### postfix
+Lowercase alphabet letters.
 
-Type: `string`\
-Default: `rainbows`
+#### letters
 
-Lorem ipsum.
+Type: `string`
+
+Uppercase and lowercase alphabet letters.
+
+#### digits
+
+Type: `string`
+
+Digits from 0 to 9.
+
+#### all
+
+Type: `string`
+
+All the characters.
