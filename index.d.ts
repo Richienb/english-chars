@@ -11,7 +11,7 @@
  * //=> 'abcdef...'
  * ```
 */
-interface englishChars {
+declare const englishChars: {
     /**
      * Uppercase alphabet letters.
     */
